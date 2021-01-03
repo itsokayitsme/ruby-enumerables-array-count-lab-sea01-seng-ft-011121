@@ -12,10 +12,13 @@ count = 0
  end
  
 def count_empty_strings(array)	
- 
-  array.count do |element|
-    if element.class == String 
-      element.empty?
-    end
-  end
+  count = 0 
+  num = 0 
+  while array.length > count do 
+   if array[count] == ""
+     num += 1 
+   end
+      count += 1 
+   end 
+   num 
 end 	
